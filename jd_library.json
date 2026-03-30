@@ -1,0 +1,253 @@
+{
+  "domains": [
+    {
+      "id": "sde",
+      "label": "Software Development",
+      "icon": "💻",
+      "jds": [
+        {
+          "id": "sde-001",
+          "title": "Software Engineer – Backend (FAANG L3)",
+          "company": "Big Tech",
+          "upvotes": 142,
+          "contributed": false,
+          "text": "We are looking for a Software Engineer to join our backend infrastructure team. You will design, build, and maintain scalable distributed systems that serve millions of users globally.\n\nResponsibilities:\n- Design and implement high-performance RESTful APIs and microservices\n- Build and maintain distributed systems with a focus on reliability and scalability\n- Collaborate with cross-functional teams including product, design, and data\n- Participate in code reviews and mentor junior engineers\n- Contribute to architectural decisions and technical roadmaps\n\nRequirements:\n- B.Tech/B.E. in Computer Science or related field\n- 0-2 years of experience (new grad welcome)\n- Strong proficiency in at least one of: Java, Go, Python, C++\n- Solid understanding of data structures, algorithms, and system design\n- Experience with SQL and NoSQL databases (PostgreSQL, Redis, DynamoDB)\n- Familiarity with cloud platforms: AWS, GCP, or Azure\n- Knowledge of REST API design, gRPC, and microservices architecture\n- Experience with Docker, Kubernetes, and CI/CD pipelines\n\nNice to Have:\n- Contributions to open-source projects\n- Experience with distributed systems (Kafka, Zookeeper)\n- LeetCode problem-solving experience"
+        },
+        {
+          "id": "sde-002",
+          "title": "Full Stack Developer – Startup",
+          "company": "Early Stage Startup",
+          "upvotes": 98,
+          "contributed": false,
+          "text": "We are a fast-growing B2B SaaS startup looking for a Full Stack Developer who loves wearing multiple hats and shipping fast.\n\nResponsibilities:\n- Build and maintain both frontend and backend of our web application\n- Work directly with founders to ship product features rapidly\n- Set up and manage cloud infrastructure on AWS\n- Integrate third-party APIs and services\n- Own the full development lifecycle from design to deployment\n\nRequirements:\n- Proficiency in React.js or Next.js for frontend development\n- Strong backend skills in Node.js or Python (FastAPI/Django)\n- Experience with PostgreSQL or MongoDB\n- Familiarity with REST APIs and GraphQL\n- Git version control and GitHub workflows\n- Basic knowledge of Docker and deployment on AWS/Heroku/Vercel\n- Strong problem-solving skills and self-motivation\n\nBonus:\n- TypeScript experience\n- Experience with Stripe or payment APIs\n- Familiarity with Tailwind CSS"
+        },
+        {
+          "id": "sde-003",
+          "title": "Android Developer",
+          "company": "Product Company",
+          "upvotes": 67,
+          "contributed": false,
+          "text": "Join our mobile team to build the next generation of our consumer-facing Android application used by 5M+ users.\n\nResponsibilities:\n- Develop new features for our Android application using Kotlin\n- Optimize app performance, memory usage, and battery consumption\n- Write clean, testable code with unit and integration tests\n- Collaborate with iOS team to maintain feature parity\n- Work with backend engineers on API integration\n\nRequirements:\n- Strong proficiency in Kotlin (Java knowledge is a plus)\n- Experience with Android SDK, Jetpack Compose, and Android Jetpack libraries\n- Understanding of MVVM and Clean Architecture patterns\n- Experience with Room, Retrofit, Coroutines, and Flow\n- Familiarity with Firebase (Auth, Crashlytics, FCM)\n- Knowledge of RESTful APIs and JSON parsing\n- Experience publishing apps to the Google Play Store\n\nGood to Have:\n- Experience with Dagger/Hilt for dependency injection\n- Knowledge of CI/CD pipelines for mobile (Fastlane, GitHub Actions)"
+        },
+        {
+          "id": "sde-004",
+          "title": "SDE-1 – Amazon",
+          "company": "Amazon",
+          "upvotes": 203,
+          "contributed": false,
+          "text": "Amazon is seeking a Software Development Engineer I to join one of our many innovative teams. You will work on large-scale distributed systems that have a direct impact on Amazon's global operations.\n\nResponsibilities:\n- Write high-quality, efficient, and maintainable code\n- Participate in system design discussions\n- Troubleshoot, debug, and resolve software defects\n- Write unit and integration tests\n- Participate in on-call rotations\n\nBasic Qualifications:\n- Bachelor's degree in Computer Science or related field\n- Programming experience with at least one modern language: Java, Python, C++, C#\n- Knowledge of Computer Science fundamentals: OOP, data structures, algorithm design\n- Experience with code versioning tools (Git)\n\nPreferred Qualifications:\n- Experience with distributed systems\n- AWS cloud services knowledge\n- Experience with Agile/Scrum methodology\n- Strong verbal and written communication skills\n- Leadership principles alignment: Customer Obsession, Ownership, Bias for Action"
+        },
+        {
+          "id": "sde-005",
+          "title": "Backend Engineer – Fintech",
+          "company": "Fintech Unicorn",
+          "upvotes": 88,
+          "contributed": false,
+          "text": "We're building the future of digital payments. Join our core backend team to build secure, high-throughput financial systems.\n\nResponsibilities:\n- Design and implement payment processing pipelines\n- Build fraud detection systems and risk engines\n- Develop secure, compliant APIs for banking integrations\n- Work with data teams on transaction analytics\n- Maintain 99.99% uptime SLAs for critical payment flows\n\nRequirements:\n- 0-3 years of experience in backend engineering\n- Strong Python or Java skills\n- Experience with microservices and event-driven architecture\n- Knowledge of Kafka or RabbitMQ for message queuing\n- Understanding of SQL databases (PostgreSQL) and query optimization\n- Basic knowledge of cryptography and secure coding practices\n- Experience with REST APIs and API security (OAuth2, JWT)\n\nBonus:\n- Knowledge of PCI-DSS compliance\n- Experience with financial APIs (RazorPay, Stripe, UPI)\n- Understanding of double-entry bookkeeping systems"
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "label": "Data Science",
+      "icon": "📊",
+      "jds": [
+        {
+          "id": "ds-001",
+          "title": "Data Scientist – Product Analytics",
+          "company": "Consumer Tech",
+          "upvotes": 115,
+          "contributed": false,
+          "text": "We are looking for a Data Scientist to join our product analytics team. You will derive insights from user behavior data to drive product decisions.\n\nResponsibilities:\n- Build predictive models to forecast user behavior and retention\n- Design and analyze A/B tests across product features\n- Create dashboards and reports for leadership\n- Work with engineering to instrument product analytics\n- Identify growth opportunities through data exploration\n\nRequirements:\n- Bachelor's or Master's in Statistics, Mathematics, Computer Science, or related field\n- Strong programming skills in Python (pandas, numpy, scikit-learn, matplotlib)\n- Proficiency in SQL for complex data querying\n- Experience with statistical analysis: hypothesis testing, regression, classification\n- Familiarity with A/B testing methodology and experiment design\n- Knowledge of data visualization tools (Tableau, Power BI, or Metabase)\n- Experience with ML frameworks: scikit-learn, XGBoost\n\nBonus:\n- Experience with Spark or distributed data processing\n- Knowledge of causal inference methods\n- Experience with cloud data warehouses (BigQuery, Snowflake, Redshift)"
+        },
+        {
+          "id": "ds-002",
+          "title": "Data Analyst – Business Intelligence",
+          "company": "E-commerce Company",
+          "upvotes": 79,
+          "contributed": false,
+          "text": "Join our BI team to transform raw business data into clear, actionable insights that shape our strategy.\n\nResponsibilities:\n- Build and maintain BI dashboards using Tableau or Power BI\n- Write complex SQL queries across large datasets\n- Collaborate with business stakeholders to understand data needs\n- Monitor KPIs and flag anomalies proactively\n- Automate recurring reports and data pipelines\n\nRequirements:\n- Proficiency in SQL (window functions, CTEs, query optimization)\n- Experience with BI tools: Tableau, Power BI, or Looker\n- Python skills for data wrangling (pandas, openpyxl)\n- Strong Excel/Google Sheets skills\n- Ability to communicate technical findings to non-technical stakeholders\n- Understanding of business metrics: CAC, LTV, churn, conversion\n\nGood to Have:\n- Experience with dbt for data transformation\n- Knowledge of Google Analytics or Mixpanel\n- Familiarity with cloud storage: S3, GCS"
+        },
+        {
+          "id": "ds-003",
+          "title": "Data Scientist – NLP / LLMs",
+          "company": "AI-first Startup",
+          "upvotes": 187,
+          "contributed": false,
+          "text": "We build AI products powered by large language models. Join us to push the frontier of applied NLP.\n\nResponsibilities:\n- Fine-tune and evaluate large language models for domain-specific tasks\n- Build NLP pipelines for text classification, entity recognition, summarization\n- Design prompts and RAG systems for production LLM applications\n- Benchmark model performance and run ablation studies\n- Collaborate with product to turn research into shipped features\n\nRequirements:\n- Strong Python skills\n- Experience with HuggingFace Transformers library\n- Understanding of transformer architecture, attention, BERT, GPT families\n- Knowledge of fine-tuning methods: LoRA, QLoRA, PEFT\n- Experience with LangChain or LlamaIndex for RAG pipelines\n- Familiarity with vector databases: Pinecone, Weaviate, ChromaDB\n- Understanding of evaluation metrics: BLEU, ROUGE, perplexity, human eval\n\nBonus:\n- Experience with OpenAI, Anthropic, or Gemini APIs\n- Knowledge of RLHF and alignment techniques\n- Published research or Kaggle competition experience"
+        },
+        {
+          "id": "ds-004",
+          "title": "Research Analyst – Investment Firm",
+          "company": "Financial Services",
+          "upvotes": 54,
+          "contributed": false,
+          "text": "Support our equity research team by building data-driven models and extracting insights from financial datasets.\n\nResponsibilities:\n- Build financial models and valuation analyses\n- Collect and clean financial data from APIs and web sources\n- Develop quantitative models for stock screening and portfolio analysis\n- Prepare research reports and investment memos\n- Monitor market trends and macroeconomic indicators\n\nRequirements:\n- Strong Python skills (pandas, numpy, matplotlib)\n- Knowledge of financial markets, valuation methods (DCF, comparables)\n- Experience with financial data APIs (Yahoo Finance, Bloomberg, Quandl)\n- SQL proficiency for database querying\n- Strong Excel and financial modeling skills\n- Good written and verbal communication\n\nBonus:\n- CFA Level 1 candidate or holder\n- Experience with algorithmic trading concepts\n- Knowledge of time series analysis"
+        }
+      ]
+    },
+    {
+      "id": "ml-engineer",
+      "label": "ML Engineering",
+      "icon": "🤖",
+      "jds": [
+        {
+          "id": "mle-001",
+          "title": "ML Engineer – Recommendations",
+          "company": "Consumer Tech Platform",
+          "upvotes": 162,
+          "contributed": false,
+          "text": "Build the ML systems that power personalized recommendations for 50M+ users.\n\nResponsibilities:\n- Design, train, and deploy recommendation models at scale\n- Build feature engineering pipelines using Spark/Flink\n- Implement A/B testing infrastructure for model evaluation\n- Monitor model performance and handle data drift\n- Optimize models for low-latency serving (< 20ms)\n\nRequirements:\n- Strong Python skills with ML libraries: PyTorch, TensorFlow, scikit-learn\n- Experience with recommendation systems: collaborative filtering, matrix factorization, two-tower models\n- Knowledge of MLOps: MLflow, Kubeflow, or SageMaker\n- Experience with feature stores and data pipelines (Spark, Airflow)\n- Understanding of model serving: TorchServe, TensorFlow Serving, Triton\n- SQL and big data processing skills\n\nBonus:\n- Experience with deep learning-based RecSys (DLRM, NCF)\n- Knowledge of Kafka for real-time feature computation\n- Contributions to open-source ML projects"
+        },
+        {
+          "id": "mle-002",
+          "title": "MLOps Engineer",
+          "company": "Enterprise SaaS",
+          "upvotes": 103,
+          "contributed": false,
+          "text": "Build the infrastructure and tooling that enables our data science team to ship models to production reliably.\n\nResponsibilities:\n- Build and maintain ML training and serving infrastructure\n- Implement CI/CD pipelines for ML models\n- Set up model monitoring and alerting for drift and degradation\n- Manage GPU cluster resources for model training\n- Containerize and orchestrate ML workloads with Docker and Kubernetes\n\nRequirements:\n- Strong Python and Bash scripting skills\n- Experience with MLflow, DVC, or Weights & Biases for experiment tracking\n- Knowledge of Docker, Kubernetes, and Helm charts\n- CI/CD experience: GitHub Actions, Jenkins, or GitLab CI\n- Cloud platform experience: AWS SageMaker, GCP Vertex AI, or Azure ML\n- Understanding of model serving patterns and API design\n\nBonus:\n- Experience with Terraform or Pulumi for infrastructure as code\n- Knowledge of data version control and feature stores (Feast)\n- Familiarity with Prometheus and Grafana for monitoring"
+        },
+        {
+          "id": "mle-003",
+          "title": "Computer Vision Engineer",
+          "company": "Autonomous Systems",
+          "upvotes": 134,
+          "contributed": false,
+          "text": "Build perception systems for real-world autonomous applications.\n\nResponsibilities:\n- Develop object detection, segmentation, and tracking algorithms\n- Train and optimize deep learning models for edge deployment\n- Build data annotation pipelines and manage training datasets\n- Optimize models for embedded hardware (NVIDIA Jetson, edge TPUs)\n- Collaborate with robotics and hardware teams\n\nRequirements:\n- Strong Python skills\n- Experience with PyTorch or TensorFlow for deep learning\n- Knowledge of CV architectures: YOLO, ResNet, EfficientNet, ViT, SAM\n- Experience with OpenCV for image processing\n- Understanding of 3D vision: point clouds, depth estimation, LiDAR processing\n- Familiarity with model optimization: ONNX, TensorRT, quantization, pruning\n\nBonus:\n- Experience with ROS (Robot Operating System)\n- Knowledge of SLAM algorithms\n- Experience with synthetic data generation"
+        },
+        {
+          "id": "mle-004",
+          "title": "Applied AI Engineer – Generative AI",
+          "company": "AI Product Company",
+          "upvotes": 221,
+          "contributed": false,
+          "text": "Build production-grade generative AI applications and the infrastructure behind them.\n\nResponsibilities:\n- Design and build RAG systems, agents, and LLM-powered workflows\n- Optimize prompt engineering and context management strategies\n- Integrate LLMs with external tools, APIs, and knowledge bases\n- Evaluate and benchmark generative AI outputs\n- Build guardrails and safety systems for production LLM apps\n\nRequirements:\n- Strong Python skills\n- Experience with LangChain, LlamaIndex, or similar orchestration frameworks\n- Knowledge of vector databases: Pinecone, Weaviate, ChromaDB, pgvector\n- Experience with OpenAI, Anthropic Claude, or Gemini APIs\n- Understanding of embedding models and semantic search\n- Familiarity with fine-tuning LLMs (LoRA, QLoRA)\n- REST API development skills (FastAPI or Flask)\n\nBonus:\n- Experience with function calling and tool use in LLMs\n- Knowledge of multi-agent frameworks (AutoGen, CrewAI)\n- Open source contributions in the AI/ML ecosystem"
+        },
+        {
+          "id": "ml-engineer-contrib-3814df13",
+          "title": "Associate AI/ML Engineer (Application-focused)",
+          "company": "",
+          "upvotes": 0,
+          "contributed": true,
+          "contributed_at": "2026-03-29T13:13:20.417961",
+          "text": "Their extensive practical experience in building and deploying AI/ML models, including LLM integration and facial recognition, demonstrates readiness for application development.\nPython\nMachine Learning Fundamentals\nLLM Integration\nDeepFace\nAWS EC2\nPrompt Engineering"
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "label": "DevOps / Cloud",
+      "icon": "☁️",
+      "jds": [
+        {
+          "id": "devops-001",
+          "title": "DevOps Engineer – AWS",
+          "company": "Cloud-native Company",
+          "upvotes": 91,
+          "contributed": false,
+          "text": "Join our platform engineering team to build and operate the cloud infrastructure powering our SaaS product.\n\nResponsibilities:\n- Design and manage AWS infrastructure using Terraform\n- Build and maintain CI/CD pipelines for 20+ microservices\n- Implement observability: logging, metrics, tracing (ELK, Prometheus, Grafana)\n- Manage Kubernetes clusters (EKS) and Helm chart deployments\n- Respond to incidents and drive postmortems\n\nRequirements:\n- Strong knowledge of AWS services: EC2, ECS/EKS, RDS, S3, Lambda, VPC, IAM\n- Experience with Terraform or CloudFormation for IaC\n- Proficiency in Docker and Kubernetes\n- CI/CD experience: GitHub Actions, Jenkins, or CircleCI\n- Linux administration and Bash scripting skills\n- Understanding of networking: DNS, load balancing, SSL/TLS\n\nBonus:\n- AWS certifications (Solutions Architect, DevOps Engineer)\n- Experience with service mesh (Istio)\n- Knowledge of GitOps with ArgoCD or Flux"
+        },
+        {
+          "id": "devops-002",
+          "title": "Site Reliability Engineer (SRE)",
+          "company": "High-Scale Platform",
+          "upvotes": 76,
+          "contributed": false,
+          "text": "Maintain and improve the reliability, scalability, and performance of systems serving millions of requests per day.\n\nResponsibilities:\n- Define and track SLOs, SLIs, and error budgets\n- Build automation to reduce toil and manual operations\n- Lead incident response and blameless postmortems\n- Capacity planning and performance tuning\n- Collaborate with development teams to improve system reliability\n\nRequirements:\n- Software development skills in Python or Go\n- Strong understanding of distributed systems and failure modes\n- Experience with Kubernetes, Docker, and container orchestration\n- Observability expertise: Prometheus, Grafana, Jaeger, ELK stack\n- On-call experience and incident management\n- Linux system administration skills\n\nBonus:\n- Experience with chaos engineering (Chaos Monkey, Gremlin)\n- Knowledge of database replication and HA setups\n- Background in software engineering"
+        },
+        {
+          "id": "devops-003",
+          "title": "Platform Engineer – Internal Developer Platform",
+          "company": "Scale-up",
+          "upvotes": 58,
+          "contributed": false,
+          "text": "Build the internal developer platform that lets our 200+ engineers ship faster and more reliably.\n\nResponsibilities:\n- Build self-service tooling for infrastructure provisioning\n- Develop internal CLIs and developer portals (Backstage)\n- Standardize and enforce golden paths for service creation\n- Manage secrets and configuration management (Vault, AWS SSM)\n- Build shared libraries and platform abstractions\n\nRequirements:\n- Strong Python or Go programming skills\n- Kubernetes operator experience or custom controller development\n- Terraform module design and management\n- Understanding of developer experience and inner development loop\n- Experience with Backstage or similar developer portals\n- Knowledge of secrets management: HashiCorp Vault or AWS Secrets Manager\n\nBonus:\n- Experience with platform engineering concepts (IDP, golden paths)\n- Contributions to CNCF projects\n- Knowledge of eBPF or kernel-level observability"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "Frontend Development",
+      "icon": "🎨",
+      "jds": [
+        {
+          "id": "fe-001",
+          "title": "Frontend Engineer – React",
+          "company": "Product Startup",
+          "upvotes": 108,
+          "contributed": false,
+          "text": "Build beautiful, performant web experiences that delight our users.\n\nResponsibilities:\n- Build reusable React component libraries\n- Implement pixel-perfect UI from Figma designs\n- Optimize web performance (Core Web Vitals, bundle size)\n- Write unit and integration tests with Jest and React Testing Library\n- Collaborate with backend engineers on API integration\n\nRequirements:\n- Strong proficiency in React.js and TypeScript\n- CSS expertise: Tailwind CSS, CSS-in-JS, animations\n- State management experience: Redux Toolkit, Zustand, or React Query\n- Experience with Next.js for SSR/SSG\n- REST API and GraphQL integration experience\n- Webpack/Vite bundler knowledge\n- Git and GitHub collaboration skills\n\nBonus:\n- Experience with Storybook for component documentation\n- Knowledge of accessibility (WCAG 2.1)\n- Familiarity with WebSocket or real-time data"
+        },
+        {
+          "id": "fe-002",
+          "title": "UI Engineer – Design Systems",
+          "company": "Enterprise Tech",
+          "upvotes": 72,
+          "contributed": false,
+          "text": "Own and scale our design system used by 30+ product teams across the organization.\n\nResponsibilities:\n- Build and maintain a shared component library in React\n- Define design tokens, theming, and accessibility standards\n- Write comprehensive documentation and usage guidelines\n- Review and merge contributions from product engineers\n- Collaborate closely with the UX/design team\n\nRequirements:\n- Expert-level React and TypeScript skills\n- Deep CSS knowledge: CSS variables, animations, responsive design\n- Experience building component libraries published to npm\n- Storybook experience for component documentation\n- Strong understanding of accessibility (ARIA, WCAG)\n- Design sensibility and ability to work with Figma\n\nBonus:\n- Experience with Radix UI, shadcn/ui, or Headless UI\n- Knowledge of Rollup or tsup for library bundling\n- Open source contributions"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Product Management",
+      "icon": "🧩",
+      "jds": [
+        {
+          "id": "pm-001",
+          "title": "Associate Product Manager (APM)",
+          "company": "Tech Company",
+          "upvotes": 95,
+          "contributed": false,
+          "text": "Join our APM program to shape the direction of products used by millions.\n\nResponsibilities:\n- Define product requirements and write detailed PRDs\n- Work with engineering and design to deliver features\n- Analyze product metrics and define success criteria\n- Conduct user research and synthesize insights\n- Prioritize backlog and manage sprint planning\n\nRequirements:\n- Bachelor's degree in any discipline (CS preferred but not required)\n- Strong analytical and problem-solving skills\n- Excellent written and verbal communication\n- Ability to work with data: SQL basics, Google Analytics, Mixpanel\n- Experience with Jira, Confluence, or Notion for project management\n- User empathy and customer-first thinking\n\nBonus:\n- Previous internship in product, engineering, or consulting\n- Experience with wireframing tools (Figma, Balsamiq)\n- Knowledge of Agile/Scrum methodology"
+        },
+        {
+          "id": "pm-002",
+          "title": "Product Manager – Growth",
+          "company": "Consumer App",
+          "upvotes": 81,
+          "contributed": false,
+          "text": "Drive user acquisition, activation, and retention across our consumer application.\n\nResponsibilities:\n- Own growth KPIs: DAU, MAU, D7/D30 retention, activation rate\n- Design and run growth experiments and A/B tests\n- Build onboarding and referral loop optimizations\n- Collaborate with marketing on paid and organic acquisition\n- Analyze funnel data to identify drop-off points\n\nRequirements:\n- Experience with product metrics and funnel analysis\n- Proficiency with analytics tools: Amplitude, Mixpanel, or Firebase\n- Understanding of A/B testing and statistical significance\n- SQL skills for self-serve data analysis\n- Strong cross-functional collaboration skills\n- Knowledge of growth frameworks (AARRR, Jobs to be Done)\n\nBonus:\n- Experience with SEO/ASO\n- Knowledge of viral loop design\n- Background in data science or engineering"
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "label": "Cybersecurity",
+      "icon": "🔐",
+      "jds": [
+        {
+          "id": "sec-001",
+          "title": "Security Engineer – Application Security",
+          "company": "Fintech",
+          "upvotes": 86,
+          "contributed": false,
+          "text": "Protect our products and users by embedding security into every stage of the development lifecycle.\n\nResponsibilities:\n- Perform security code reviews and threat modeling\n- Run penetration tests on web and mobile applications\n- Build and maintain SAST/DAST tooling in CI/CD pipelines\n- Respond to and investigate security incidents\n- Educate developers on secure coding practices\n\nRequirements:\n- Knowledge of OWASP Top 10 and web application vulnerabilities\n- Experience with penetration testing tools: Burp Suite, Metasploit, Nmap\n- Scripting skills in Python or Bash\n- Understanding of cryptography, PKI, and TLS\n- Familiarity with cloud security: AWS IAM, Security Groups, KMS\n- Knowledge of compliance standards: SOC 2, ISO 27001\n\nBonus:\n- CEH, OSCP, or similar certifications\n- Experience with bug bounty programs\n- Knowledge of mobile security (Android/iOS)"
+        },
+        {
+          "id": "sec-002",
+          "title": "SOC Analyst – Threat Detection",
+          "company": "Enterprise",
+          "upvotes": 49,
+          "contributed": false,
+          "text": "Monitor and protect our enterprise environment from cyber threats.\n\nResponsibilities:\n- Monitor SIEM alerts and investigate security events\n- Perform malware analysis and incident response\n- Write detection rules and playbooks\n- Threat hunt across endpoint, network, and cloud telemetry\n- Maintain and tune security tools\n\nRequirements:\n- Understanding of cyber kill chain and MITRE ATT&CK framework\n- Experience with SIEM tools: Splunk, Microsoft Sentinel, or QRadar\n- Knowledge of networking protocols: TCP/IP, DNS, HTTP, TLS\n- Basic scripting: Python or PowerShell\n- Familiarity with EDR solutions: CrowdStrike, SentinelOne, Defender\n- Log analysis and correlation skills\n\nBonus:\n- CompTIA Security+, CySA+, or GCIH certification\n- Experience in digital forensics\n- Knowledge of cloud security monitoring"
+        }
+      ]
+    },
+    {
+      "id": "quant",
+      "label": "Quant / Research",
+      "icon": "📈",
+      "jds": [
+        {
+          "id": "quant-001",
+          "title": "Quantitative Analyst – Algo Trading",
+          "company": "HFT / Quant Fund",
+          "upvotes": 143,
+          "contributed": false,
+          "text": "Develop and deploy systematic trading strategies using quantitative methods.\n\nResponsibilities:\n- Research and develop alpha signals using market microstructure data\n- Backtest trading strategies with rigorous statistical validation\n- Implement real-time execution algorithms in C++ or Python\n- Analyze P&L attribution and risk metrics\n- Collaborate with engineers to deploy strategies to production\n\nRequirements:\n- Strong mathematics: statistics, linear algebra, probability, stochastic calculus\n- Programming proficiency in Python and C++\n- Understanding of financial markets and instruments\n- Experience with time series analysis and signal processing\n- Backtesting framework experience\n- Strong statistical intuition and hypothesis testing\n\nBonus:\n- Knowledge of market microstructure\n- Experience with order book data\n- Research publications or Kaggle competition wins"
+        }
+      ]
+    }
+  ]
+}

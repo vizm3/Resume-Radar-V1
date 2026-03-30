@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResumeRadar — ATS Score & Career Intelligence</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ── SIDEBAR ─────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">Resume<span>Radar</span></div>
+      <button class="sidebar-toggle" id="sidebarToggle" title="Toggle JD Library">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-section-label">JD Library</div>
+
+    <div class="domain-list" id="domainList">
+      <div class="loading-pulse">Loading library...</div>
+    </div>
+
+    <div class="sidebar-footer">
+      <button class="btn-contribute-open" id="openContributeBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        Contribute a JD
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ────────────────────────────────────────── -->
+  <main class="main">
+
+    <!-- Top bar -->
+    <div class="topbar">
+      <button class="sidebar-toggle-mobile" id="sidebarToggleMobile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        JD Library
+      </button>
+      <div class="topbar-right">
+        <span class="badge-opensource">Open Source</span>
+      </div>
+    </div>
+
+    <!-- Active JD banner -->
+    <div class="active-jd-banner" id="activeJdBanner" style="display:none">
+      <div class="active-jd-info">
+        <span class="active-jd-label">Using JD:</span>
+        <span class="active-jd-title" id="activeJdTitle"></span>
+      </div>
+      <div class="active-jd-actions">
+        <button class="btn-upvote" id="upvoteBtn" title="Upvote this JD">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          <span id="upvoteCount">0</span>
+        </button>
+        <button class="btn-clear-jd" id="clearJdBtn">✕ Clear</button>
+      </div>
+    </div>
+
+    <!-- Input area -->
+    <div class="input-section">
+      <div class="input-grid">
+
+        <!-- Resume panel -->
+        <div class="panel" id="resumePanel">
+          <div class="panel-header">
+            <div class="panel-label">
+              <span class="dot"></span> Your Resume
+            </div>
+            <label class="btn-upload" for="resumeUpload" title="Upload PDF or DOCX">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              Upload PDF/DOCX
+              <input type="file" id="resumeUpload" accept=".pdf,.docx,.txt" style="display:none"/>
+            </label>
+          </div>
+          <div class="upload-progress" id="uploadProgress" style="display:none">
+            <div class="upload-progress-bar" id="uploadProgressBar"></div>
+          </div>
+          <textarea id="resumeText" placeholder="Paste your resume text here, or upload a PDF/DOCX above...&#10;&#10;Include all sections: skills, experience, education, projects."></textarea>
+        </div>
+
+        <!-- JD panel -->
+        <div class="panel" id="jdPanel">
+          <div class="panel-header">
+            <div class="panel-label">
+              <span class="dot dot-blue"></span> Job Description
+            </div>
+            <span class="jd-source-tag" id="jdSourceTag" style="display:none">From Library</span>
+          </div>
+          <textarea id="jdText" placeholder="Paste the job description here, or pick one from the JD Library on the left...&#10;&#10;Include required skills, responsibilities, qualifications."></textarea>
+        </div>
+      </div>
+
+      <button class="btn-analyze" id="analyzeBtn">
+        <span id="btnText">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:-3px;margin-right:6px"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          Analyze Resume
+        </span>
+        <div class="spinner" id="spinner"></div>
+      </button>
+      <div class="error-banner" id="errorBanner"></div>
+    </div>
+
+    <!-- Results -->
+    <div id="results" style="display:none">
+      <div class="results-divider">
+        <span>── Analysis Results</span>
+        <span class="results-divider-line"></span>
+      </div>
+
+      <div class="results-grid">
+
+        <!-- Score card -->
+        <div class="score-card">
+          <div class="score-label">ATS Match Score</div>
+          <div class="score-ring">
+            <svg viewBox="0 0 120 120" width="120" height="120">
+              <circle class="ring-track" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" id="ringFill" cx="60" cy="60" r="52"/>
+            </svg>
+            <div class="score-center">
+              <div class="score-number" id="scoreNum">0</div>
+              <div class="score-denom">/100</div>
+            </div>
+          </div>
+          <div class="score-verdict" id="scoreVerdict"></div>
+
+          <!-- Discover Roles CTA (shows if score < 55) -->
+          <div class="discover-cta" id="discoverCta" style="display:none">
+            <p>Low match? Find roles where you shine.</p>
+            <button class="btn-discover" id="discoverBtn">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Discover Matching Roles
+            </button>
+          </div>
+        </div>
+
+        <!-- Detail cards -->
+        <div class="details-col">
+          <div class="detail-card">
+            <div class="detail-header">
+              <span class="detail-icon">✓</span> Matched Keywords
+            </div>
+            <div class="detail-body">
+              <div class="tags" id="matchedTags"></div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-header">
+              <span class="detail-icon warn">✗</span> Missing Keywords / Skill Gaps
+            </div>
+            <div class="detail-body">
+              <div class="tags" id="missingTags"></div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-header">
+              <span class="detail-icon blue">💡</span> AI Improvement Suggestions
+            </div>
+            <div class="detail-body">
+              <ul class="suggestion-list" id="suggestionList"></ul>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-header">
+              <span class="detail-icon">📋</span> Overall Summary
+            </div>
+            <div class="detail-body">
+              <p class="summary-text" id="summaryText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role Discovery Section -->
+      <div id="roleDiscovery" style="display:none">
+        <div class="results-divider">
+          <span>── Role Discovery Engine</span>
+          <span class="results-divider-line"></span>
+        </div>
+        <div class="role-discovery-intro">
+          Based on your skills, here are roles where you'd be a strong candidate:
+        </div>
+        <div class="role-cards" id="roleCards"></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ── CONTRIBUTE MODAL ───────────────────────────────────────── -->
+<div class="modal-overlay" id="contributeModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Contribute a Job Description</div>
+      <button class="modal-close" id="closeContributeBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="modal-desc">Share a JD with the community. It will be instantly available for everyone.</p>
+
+      <div class="form-group">
+        <label class="form-label">JD Title *</label>
+        <input type="text" class="form-input" id="ctbTitle" placeholder="e.g. Senior Backend Engineer – Stripe"/>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Company / Source</label>
+        <input type="text" class="form-input" id="ctbCompany" placeholder="e.g. Stripe (or leave blank)"/>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Domain *</label>
+        <select class="form-input" id="ctbDomain">
+          <option value="">Select domain...</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Job Description Text *</label>
+        <div class="modal-jd-hint">
+          You can use the JD currently in the editor —
+          <button class="btn-use-current-jd" id="useCurrentJdBtn">Use current JD text</button>
+        </div>
+        <textarea class="form-input form-textarea" id="ctbText" placeholder="Paste the full job description here..."></textarea>
+      </div>
+
+      <button class="btn-submit-contribute" id="submitContributeBtn">
+        <span id="ctbBtnText">Submit JD to Library</span>
+        <div class="spinner spinner-sm" id="ctbSpinner" style="display:none"></div>
+      </button>
+      <div class="contribute-success" id="contributeSuccess" style="display:none">
+        ✓ JD contributed successfully! It's now available in the library.
+      </div>
+      <div class="error-banner" id="contributeError"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
